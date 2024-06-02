@@ -327,8 +327,12 @@ img {
   border-bottom: 1.5px solid #633e3e;
 }
 
+.cart {
+}
+
 .cart .items.even {
   background: #fafafa;
+  width: 1100px;
 }
 
 .cart .items .infoWrap {
@@ -337,7 +341,7 @@ img {
 }
 
 .cartSection img {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .cart .items .cartSection {
@@ -345,7 +349,6 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px;
 }
 
 .cart .items .cartSection img.itemImg {
@@ -359,7 +362,6 @@ img {
 /* 這是中間購物車內容物的字 */
 .cart .items .cartSection h3 {
   text-transform: uppercase;
-  letter-spacing: 0em;
   font-size: 2rem;
 }
 
@@ -369,7 +371,7 @@ img {
 }
 
 .cart span {
-  margin-left: 13rem;
+  margin-left: 10rem;
   font-size: 1.2rem;
 }
 /* 調要打字數量的 */
@@ -379,7 +381,7 @@ img {
   font-size: 1.3em;
   margin-left: 1rem;
   padding-left: 8px;
-  margin-right: 5rem;
+  margin-right: 10rem;
 }
 
 /* 這是顯示有無庫存 */
