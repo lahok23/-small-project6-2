@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIZA</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./照片/logo 超小.png" type="image/x-icon" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body>
+      <div class="main-container">    
+        <div class="container">
+          <nav class="main-nav">
+            <ul class="ul_first">
+              <li class="logo">
+                <a href="#"></a>
+              </li>
+            </ul>
+            <ul class="ul_second">
+              <li><a href="./second.html">進入網站</a></li>
+            </ul>
+          </nav>
+
+          <div class="page1 ">
+          
+          <section id="summer" class="summer">
+            <video autoplay loop muted plays-inline class="back-video">
+              <source src="./影片/奇萊.mp4" type="video/mp4" />
+            </video>
+            <div class="content">
+              <h1>奇萊祭典</h1>
+              <h2>KIZA Malalikid</h2>
+              <h4>
+                8月———<span
+                  class="path"
+                  style="
+                    display: inline-block;
+                    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                    position: relative;
+                    top: 8px;
+                  "
+                ></span
+                >———10月
+              </h4>
+            </div>
+          </div>
+
+          <div class="scroll-hint">
+            <p class="animate__animated animate__pulse animate__repeat-3	">滾動查看更多 ➔</p>
+          </div>
+          </section>
+
+          <section class="page2">
+            <section id="summer" class="summer">
+              <video autoplay loop muted plays-inline class="back-video video2">
+                <source src="./影片/alufu...mp4" type="video/mp4" />
+              </video>
+              <div class="content">
+                <h1>奇萊工作坊</h1>
+                <h2>KIZA Nakamayan</h2>
+                <h4>
+                  <span
+                    class="path"
+                    style="
+                      display: inline-block;
+                      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                      position: relative;
+                      top: 8px;
+                    "
+                  ></span
+                  ><span
+                    class="path"
+                    style="
+                      display: inline-block;
+                      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                      position: relative;
+                      top: 8px;
+                    "
+                  ></span
+                  ><span
+                    class="path"
+                    style="
+                      display: inline-block;
+                      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                      position: relative;
+                      top: 8px;
+                    "
+                  ></span>
+                </h4>
+              </div>
+            </section>
+          </section>
+
+          <section class="page3">
+            <section id="summer" class="summer">
+              <video autoplay loop muted plays-inline class="back-video video3">
+                <source src="./影片/alifongfong.mp4" type="video/mp4" />
+              </video>
+              <div class="content">
+                <h1>奇萊飲食</h1>
+                <h2>KIZA Kemaen</h2>
+                <h4>
+                  <span
+                    class="path"
+                    style="
+                      display: inline-block;
+                      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                      position: relative;
+                      top: 8px;
+                    "
+                  ></span
+                  ><span
+                    class="path"
+                    style="
+                      display: inline-block;
+                      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                      position: relative;
+                      top: 8px;
+                    "
+                  ></span
+                  ><span
+                    class="path"
+                    style="
+                      display: inline-block;
+                      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                      position: relative;
+                      top: 8px;
+                    "
+                  ></span>
+                </h4>
+              </div>
+            </section>
+          </section>
+
+          <section class="page4">
+            <section id="summer" class="summer">
+              <video autoplay loop muted plays-inline class="back-video video4">
+                <source src="./影片/木雕.mp4" type="video/mp4" />
+              </video>
+              <div class="content">
+                <h1>奇萊藝術</h1>
+                <h2>KIZA Diheku</h2>
+                <h4>
+                  <span
+                    class="path"
+                    style="
+                      display: inline-block;
+                      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                      position: relative;
+                      top: 8px;
+                    "
+                  ></span
+                  ><span
+                    class="path"
+                    style="
+                      display: inline-block;
+                      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                      position: relative;
+                      top: 8px;
+                    "
+                  ></span
+                  ><span
+                    class="path"
+                    style="
+                      display: inline-block;
+                      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                      position: relative;
+                      top: 8px;
+                    "
+                  ></span>
+                </h4>
+              </div>
+            </section>
+          </section>
+        </div>
+      </div>
+
+     
+    <script>
+document.addEventListener("wheel", function(event) {
+  event.preventDefault();
+  const delta = Math.sign(event.deltaY);
+  const container = document.querySelector('.main-container');
+  container.scrollLeft += delta * scrollStep; 
+});
+
+
+
+const scrollHint = document.querySelector('.scroll-hint');
+
+
+document.addEventListener("wheel", function(event) {
+
+  const container = document.querySelector('.main-container');
+
+
+  const scrollStep = 1;
+
+
+  container.scrollLeft += event.deltaY * scrollStep;
+
+
+  if (scrollHint) {
+    scrollHint.style.display = 'none';
+  }
+});
+
+
+
+
+
+    </script>
+  </body>
+</html>

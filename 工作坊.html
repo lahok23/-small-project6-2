@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIZA工作坊</title>
+    <link rel="stylesheet" href="./工作坊.css" />
+    <link rel="shortcut icon" href="./照片/logo 超小.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 上方 -->
+      <div class="header">
+        <a id="logo" href="./second.html"
+          ><img src="./照片/橫式超超小.png" alt="logo"
+        /></a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="ph-bold ph-list"></i>
+        </div>
+        <ul class="navbar">
+          <li id="festival"><a href="./祭典.html">祭典</a></li>
+          <li id="food"><a href="./飲食.html">飲食</a></li>
+          <li id="art"><a href="./藝術.html">藝術</a></li>
+          <li id="workshop"><a href="#">工作坊</a></li>
+          <li id="live"><a href="./住宿.html">住宿</a></li>
+        </ul>
+        <ul class="icon">
+          <li>
+            <a href="./cart.html">
+              <i class="ph-bold ph-shopping-cart-simple"></i>
+              <span id="cartItemCount" style="color: black; font-size: 18px"
+                >0</span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- banner -->
+      <div class="banner">
+        <img src="./照片/工作坊封面.JPG" alt="工作坊封面" />
+        <div class="text-banner">
+          <h2>工作坊</h2>
+          <h1>透過溫度，傳遞文化的力量</h1>
+        </div>
+      </div>
+
+      <!-- 下方 -->
+      <section>
+        <h2>選擇工作坊</h2>
+        <ul class="course">
+          <li class="card-item" data-itemid="uniqueItemId1" id="serv-groom">
+            <div class="card-image">
+              <img
+                src="https://img.ws.mms.shopee.tw/3f98f9339004a87fcef3cf8be65dc0e0"
+                alt="製作情人袋"
+              />
+            </div>
+            <ul>
+              <div class="coursetext">
+                <h3>製作情人袋</h3>
+                <p>講師巴奈</p>
+                <br />
+              </div>
+              <p>
+                alubu
+                <span
+                  ><i
+                    class="ph-bold ph-speaker-high play-audio"
+                    data-audio="影片/alubu.mov"
+                  ></i
+                ></span>
+              </p>
+              <span class="subtitle"
+                >豐年祭上，女孩可藉由舞蹈將檳榔放入心儀男孩的情人袋，若男孩也非常屬意女孩，則可將情人袋贈與給女孩配戴，宣告兩人的交往關係。</span
+              >
+              <li><a href="#">耗時</a><span>6.5h</span></li>
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="1200">$1200</span>
+              </li>
+              <button
+                class="btn-filled-dark"
+                data-course="製作情人袋"
+                data-price="1200"
+                data-image="https://img.ws.mms.shopee.tw/3f98f9339004a87fcef3cf8be65dc0e0"
+              >
+                預約
+              </button>
+            </ul>
+          </li>
+          <li class="card-item" data-itemid="uniqueItemId2" id="serv-board">
+            <div class="card-image">
+              <img
+                src="http://www.tapmc.com.taipei/Img.ashx?f=00093F"
+                alt="認識野菜"
+              />
+            </div>
+            <ul>
+              <div class="coursetext">
+                <h3>認識野菜</h3>
+                <p>講師 笛布斯</p>
+              </div>
+              <p>
+                dateng
+                <span
+                  ><i
+                    class="ph-bold ph-speaker-high play-audio"
+                    data-audio="影片/dateng.mov"
+                  ></i
+                ></span>
+              </p>
+              <span class="subtitle"
+                >阿美族，又稱「吃草的民族」，居住地自然環境、資源豐厚，而發展出野菜文化。早年阿美族取得食物不易，便直接山林中取材，從野外少量採摘蔬菜。</span
+              >
+              <li><a href="#">耗時</a><span>3h</span></li>
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="200">$200</span>
+              </li>
+              <button
+                class="btn-filled-dark"
+                data-course="認識野菜"
+                data-price="200"
+                data-image="http://www.tapmc.com.taipei/Img.ashx?f=00093F"
+              >
+                預約
+              </button>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- 2 -->
+        <ul class="course">
+          <li class="card-item" data-itemid="uniqueItemId3" id="serv-groom">
+            <div class="card-image">
+              <img
+                src="./照片/399694620_664327975847548_4643314732394794198_n.jpg"
+                alt="樹皮文化"
+              />
+            </div>
+            <ul>
+              <div class="coursetext">
+                <h3>樹皮文化</h3>
+                <p>講師 拉厚克</p>
+              </div>
+              <p>
+                tupelak
+                <span
+                  ><i
+                    class="ph-bold ph-speaker-high play-audio"
+                    data-audio="影片/tupelak.mov"
+                  ></i
+                ></span>
+              </p>
+              <span class="subtitle"
+                >大自然與原住民的生活息息相關，在三百多年前阿美族人就會用樹皮來做衣服，由於沒有留下文字資料，一切靠口傳，體驗樹皮文化的創作。</span
+              >
+              <li><a href="#">耗時</a><span>4h</span></li>
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="1000">$1000</span>
+              </li>
+              <button
+                class="btn-filled-dark"
+                data-course="樹皮文化"
+                data-price="1000"
+                data-image="./照片/399694620_664327975847548_4643314732394794198_n.jpg"
+              >
+                預約
+              </button>
+            </ul>
+          </li>
+          <li class="card-item" data-itemid="uniqueItemId4" id="serv-board">
+            <div class="card-image">
+              <img
+                src="https://www.jacreative.com.tw/eastcwh/2019/images/fakong/s8.jpg"
+                alt="藤編文化"
+              />
+            </div>
+            <ul>
+              <div class="coursetext">
+                <h3>藤編文化</h3>
+                <p>講師 拿告</p>
+              </div>
+              <p>
+                uway
+                <span
+                  ><i
+                    class="ph-bold ph-speaker-high play-audio"
+                    data-audio="影片/uway.mov"
+                  ></i
+                ></span>
+              </p>
+              <span class="subtitle"
+                >體驗藤編文化，在迷你的小背簍中看見部落的力與美！由可愛的藤編Ina教你製作背簍時，削成扁形的做成四周與底部的編織，削成圓形的作為提揹的支架。</span
+              >
+              <li><a href="#">耗時</a><span>3h</span></li>
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="500">$500</span>
+              </li>
+              <button
+                class="btn-filled-dark"
+                data-course="藤編文化"
+                data-price="500"
+                data-image="https://www.jacreative.com.tw/eastcwh/2019/images/fakong/s8.jpg"
+              >
+                預約
+              </button>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- 3 -->
+        <ul class="course">
+          <li class="card-item" data-itemid="uniqueItemId5" id="serv-groom">
+            <div class="card-image">
+              <img
+                src="https://www.hualiennews.com/wp-content/uploads/2021/05/46B03EBD-64F5-426F-B0CD-4D5201035994.jpg"
+                alt="樂舞體驗"
+              />
+            </div>
+            <ul>
+              <div class="coursetext">
+                <h3>樂舞體驗</h3>
+                <p>講師 阿勒飛斯</p>
+              </div>
+              <p>
+                misakeru
+                <span
+                  ><i
+                    class="ph-bold ph-speaker-high play-audio"
+                    data-audio="影片/misakeru.mov"
+                  ></i
+                ></span>
+              </p>
+              <span class="subtitle"
+                >『歌』，記憶以前的生活，『舞』，保存現在的傳統『樂舞展現的不僅是表演藝術，是藏在靈魂裡的語言，是傳遞文化的媒介。』</span
+              >
+              <li><a href="#">耗時</a><span>2h</span></li>
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="400">$400</span>
+              </li>
+              <button
+                class="btn-filled-dark"
+                data-course="樂舞體驗"
+                data-price="400"
+                data-image="https://www.hualiennews.com/wp-content/uploads/2021/05/46B03EBD-64F5-426F-B0CD-4D5201035994.jpg"
+              >
+                預約
+              </button>
+            </ul>
+          </li>
+          <li class="card-item" data-itemid="uniqueItemId6" id="serv-board">
+            <div class="card-image">
+              <img src="./照片/名人校園講唱會.jpg" alt="古謠傳唱" />
+            </div>
+            <ul>
+              <div class="coursetext">
+                <h3>古謠傳唱</h3>
+                <p>講師 大亨</p>
+              </div>
+              <p>
+                remadiw
+                <span
+                  ><i
+                    class="ph-bold ph-speaker-high play-audio"
+                    data-audio="影片/remadwi.mov"
+                  ></i
+                ></span>
+              </p>
+              <span class="subtitle"
+                >課程中學習一般歌謠，指平時所唱的歌謠，包括工作歌及生活歌。演唱方式除應答唱法外，大多是以齊唱的方式來進行。</span
+              >
+              <li><a href="#">耗時</a><span>3h</span></li>
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="600">$600</span>
+              </li>
+              <button
+                class="btn-filled-dark"
+                data-course="古謠傳唱"
+                data-price="600"
+                data-image="./照片/名人校園講唱會.jpg"
+              >
+                預約
+              </button>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 預約 -->
+      <div id="reservation-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <img src="./照片/橫式超超小.png" alt="logo" />
+          <p>預約講師日期：</p>
+          <input type="date" id="selected-date" />
+          <p>請選擇人數：</p>
+          <input type="number" id="selected-people" min="1" value="1" />
+          <p>總金額：</p>
+          <span id="total-price">$0</span>
+          <button class="btn-filled-dark" id="confirmQuantityBtn">
+            確認預約
+          </button>
+          <p id="success-message" style="display: none; color: green">
+            預約成功！
+          </p>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <a id="logo" href="./index.html"
+          ><img src="./照片/白色footer.png" alt="footer logo"
+        /></a>
+        <ul class="footer-icon">
+          <li>
+            <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./工作坊.js"></script>
+    <script src="./cart.js"></script>
+  </body>
+</html>

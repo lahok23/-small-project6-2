@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIZA藝術</title>
+    <link rel="stylesheet" href="./藝術.css" />
+    <link rel="shortcut icon" href="./照片/logo 超小.png" type="image/x-icon" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <!-- 選項 -->
+    <div class="wrap">
+      <div class="header">
+        <a id="logo" href="./second.html"
+          ><img src="./照片/橫式超超小.png" alt=""
+        /></a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="ph-bold ph-list"></i>
+        </div>
+        <ul class="navbar">
+          <li><a href="./祭典.html">祭典</a></li>
+          <li><a href="./飲食.html">飲食</a></li>
+          <li><a href="#">藝術</a></li>
+          <li><a href="./工作坊.html">工作坊</a></li>
+          <li><a href="./住宿.html">住宿</a></li>
+        </ul>
+        <ul class="icon">
+          <li>
+            <a href="./cart.html">
+              <i class="ph-bold ph-shopping-cart-simple"></i>
+              <span id="cartItemCount" style=" color: black;  font-size: 18px;">0</span>
+              <!-- 新增显示数量的元素 -->
+            </a>
+          </li>
+        </ul>
+      </div>
+      <br /><br /><br /><br />
+
+      <!-- banner -->
+      <div class="banner">
+        <img src="./照片/黃聖安01.JPG" alt="" />
+        <div class="text-banner">
+          <h2>藝術</h2>
+          <h1>延續文化脈動的傳承者</h1>
+        </div>
+      </div>
+
+      <!-- 下方 -->
+      <section>
+
+        <!-- 1 -->
+        <h2>選擇藝術商品</h2>
+        
+        <ul class="course">
+          <li class="card-item" id="serv-groom">
+            <div class="card-image">
+              <img
+                src="./照片/加禮宛 木雕 改過.png"
+              />
+            </div>
+            <ul>
+                <div class="coursetext"> <h3>加禮宛木雕</h3> 
+                    <p>卡兆・馬耀 </p>
+                    </div>
+              <br />
+
+              <span class="subtitle"
+                >加禮宛木雕，達固湖灣被攻破後，二族慘遭滅族，倖存族人逃往縱谷、東海岸，隱身於阿美族之中，直至2007年才正名成功，2006年7月1日，撒奇萊雅族於花蓮市國福部落舉辦首次火神祭，喚醒逝去的靈魂其記取過去。
+              </span>
+             
+              <li>
+                <br>
+                <a href="#">金額</a
+                ><span  class="price" data-price="80000">$80000</span>
+              </li>
+
+              <button class="btn-filled-dark" data-course="加禮宛木雕" data-image="../照片/加禮宛 木雕 改過.png">
+                購買
+              </button>
+            </ul>
+          </li>
+          <li class="card-item" id="serv-board">
+            <div class="card-image">
+              <img
+                src="./照片/房子阿美族.jpg"
+              />
+            </div>
+
+            
+            <ul>
+                <div class="coursetext "> <h3>部落的土地</h3> 
+                    <p>卡兆・馬耀 </p>
+                    </div>
+              <br />
+
+
+              <span class="subtitle"
+                >原住民的活動範圍逐漸受限，生活方式也被迫變遷，造成文化的流失，土地的淵源就是人的淵源。光是地名用來辨識當地資源、地貌、地形，族人不失去方向，是祖先們生活時留下來的智慧結晶。</span
+              >
+              <li>
+                <br>
+                <a href="#">金額</a
+                ><span class="price" data-price="60000">$60000</span>
+              </li>
+
+              <button class="btn-filled-dark" data-course="部落的土地" data-image="./照片/房子阿美族.jpg">購買</button>
+            </ul>
+          </li>
+        </ul>
+
+
+        <!-- 2 -->
+        <ul class="course">
+          <li class="card-item" id="serv-groom">
+            <div class="card-image">
+              <img src="./照片/黃聖安01.JPG" />
+            </div>
+            <ul>
+                <div class="coursetext"> <h3>母親的祝福</h3> 
+                    <p>黃聖安</p>
+                    </div>
+              <br />
+              
+              <span class="subtitle"
+                >阿美族社會是一個典型的母系社會， INA( 依娜 ) 是媽媽，也是太陽，太陽是阿美族的精神象徵。太陽的光是慈祥的，是母親的手。</span
+              >
+              <li>
+                <br>
+                <a href="#">金額</a
+                ><span class="price" data-price="9000">$9000</span>
+              </li>
+              <button class="btn-filled-dark" data-course="母親的祝福"  data-image="./照片/黃聖安01.JPG">購買</button>
+            </ul>
+          </li>
+          <li class="card-item" id="serv-board">
+            <div class="card-image">
+              <img src="./照片/魚筌（阿美族）.png" />
+            </div>
+            <ul>
+                <div class="coursetext"> <h3>漁筌工具</h3> 
+                    <p>文健站長輩</p>
+                    </div>
+              <br />
+
+              <span class="subtitle"
+                >魚筌為漁撈用編容器的一種，用以從事捕魚活動，該件物品的製作材質為黃藤與竹，用絞織編法縛紮而成，做漏斗狀，功用在於使魚、蝦進入之後無法游出去而被捕獲。
+ </span
+              >
+              <li>
+                <br>
+                <a href="#">金額</a
+                ><span class="price" data-price="1200">$1200</span>
+              </li>
+              <button class="btn-filled-dark"   data-image="./照片/魚筌（阿美族）.png" data-course="漁筌工具">購買</button>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- 3 -->
+        <ul class="course">
+          <li class="card-item" id="serv-groom">
+            <div class="card-image">
+              <img src="./照片/kakeng截圖.png" />
+            </div>
+            <ul>
+                <div class="coursetext"> <h3>竹鐘樂器</h3> 
+                    <p>達魯·嘎照</p>
+                    </div>
+
+
+            <span class="subtitle"
+                >竹鐘（Kakeng）是阿美族獨有的樂器之一。傳統阿美族女方取男方時，女方家族為了告知部落家族即將再多增加一位男丁，便以長竹筒管擊地作為報喜訊的方式，日治時期政府以「文明」為名，禁止阿美族招贅的風俗，進而使敲擊竹鐘的傳統消逝，材料也難以保存，在族人頻繁的遷徙中逐漸失傳。</span
+              >
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="5000">$5000</span>
+              </li>
+
+              <button class="btn-filled-dark" data-image="./照片/kakeng截圖.png" data-course="竹鐘樂器">
+                購買
+              </button>
+            </ul>
+          </li>
+          <li class="card-item" id="serv-board">
+            <div class="card-image">
+              <img src="./照片/木鼓.JPG" />
+            </div>
+            <ul>
+                <div class="coursetext"> <h3>木鼓樂器</h3> 
+                    <p>達魯·嘎照</p>
+                    </div>
+              <br />
+            
+              <span class="subtitle"
+                >
+                過去阿美族人的木鼓是取樟樹或茄苳樹等不易腐爛的樹種，將樹幹挖空成鼓胴，再用繩索懸掛於聚會所，要召集族人時，便用杵棒撞擊使之產生宏亮聲響，族人也會依集合或緊急的狀況，決定敲擊鼓聲的長短與多少為信號。<br><br><br></span
+              >
+          
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="4000" >$4000</span>
+              </li>
+
+              <button class="btn-filled-dark" data-image="./照片/木鼓.JPG" data-course="木鼓樂器">
+                購買
+              </button>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+          <!-- footer -->
+          <div class="footer">
+            <a id="logo" href="./index.html"
+              ><img src="./照片/白色footer.png" alt=""
+            /></a>
+            <ul class="footer-icon">
+              <li>
+                <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      <!-- -- -->
+        <div id="quantityModal" class="modal">
+          <div class="modal-content">
+            <img src="./照片/橫式超超小.png" alt="">
+            <span class="close">&times;</span>
+           
+            <p>請輸入購買數量:</p>
+            <input type="number" id="quantityInput" min="1" max="50" value="1">
+            <p id="totalAmount"></p>
+            <button id="confirmQuantity" class="btn-filled-dark">確定</button>
+            <p id="purchaseSuccess" style="display: none; color: green;">購買成功！</p>
+          </div>
+        </div>
+
+
+
+        </div>
+    </div>
+    <script src="./藝術.js"></script>
+    <script src="./cart.js"></script>
+  </body>
+</html>
+
+

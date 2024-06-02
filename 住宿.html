@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIZA住宿</title>
+    <link rel="stylesheet" href="./住宿.css" />
+    <link rel="shortcut icon" href="./照片/logo 超小.png" type="image/x-icon" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <a id="logo" href="./second.html"
+          ><img src="./照片/橫式超超小.png" alt=""
+        /></a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="ph-bold ph-list"></i>
+        </div>
+        <ul class="navbar">
+          <li><a href="./祭典.html">祭典</a></li>
+          <li><a href="./飲食.html">飲食</a></li>
+          <li><a href="./藝術.html">藝術</a></li>
+          <li><a href="./工作坊.html">工作坊</a></li>
+          <li><a href="#">住宿</a></li>
+        </ul>
+        <ul class="icon">
+          <li>
+            <a href="./cart.html">
+              <i class="ph-bold ph-shopping-cart-simple"></i>
+              <span id="cartItemCount" style=" color: black;  font-size: 18px;">0</span>
+              <!-- 新增显示数量的元素 -->
+            </a>
+          </li>
+        </ul>
+      </div>
+      <br /><br /><br /><br /><br />
+      <section class="form-container">
+        <h2>您想去哪裡?</h2>
+        <div class="input-container">
+          <div class="inputBox" onclick="showPopup('destination-popup')">
+              <i class="ph-fill ph-map-pin"></i>
+              <input type="text" placeholder="選擇奇萊地點" id="destination-input" readonly/>
+          </div>
+          <div class="inputBox" onclick="showPopup('date-popup')">
+              <i class="ph-fill ph-calendar-check"></i>
+              <input type="text" placeholder="選擇日期" id="date-input" readonly/>
+          </div>
+          <div class="inputBox" onclick="showPopup('guests-popup')">
+              <i class="ph-fill ph-user"></i>
+              <input type="text" placeholder="2 位旅客, 1 間客房" id="guests-input" readonly/>
+          </div>
+      </div>
+      <div class="inputBox">
+          <input type="submit" value="搜尋" onclick="searchRooms()"/>
+      </div>
+  </section>
+      </section>
+      <!-- 折扣 -->
+      <section class="discount">
+        <div class="item-h2">
+          <h2>探索文化與住宿</h2>
+        </div>
+        <div class="discount-item">
+          <div class="item">
+            <h4><i class="ph-fill ph-fork-knife"></i>購買原民農作</h4>
+          </div>
+          <div class="item">
+            <h4><i class="ph-fill ph-hand-heart"></i>享受部落手作坊</h4>
+          </div>
+          <div class="item">
+            <h4><i class="ph-fill ph-paint-brush"></i>探索原民藝術</h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="room">
+        <h2>選擇奇萊房間</h2>
+        <p>土地即是文化的道路</p>
+        <div class="room-container" id="room-container">
+          <div class="room-item" data-location="新城鄉" data-id="1">
+              <a href="#" class="booking-link" data-name="北星海景套房" data-price="1130">
+                  <img src="./照片/七星潭有海的照片2.jpg" alt="">
+              </a>
+              <p>9.4/10 <span>棒極了(1002則評論)</span></p>
+              <h3>北星海景套房</h3>
+              <p>新城鄉</p>
+              <h3 class="price" data-price="1130">NT$1.130</h3>
+              <a href="#" class="btn-filled-dark booking-link" data-name="北星海景套房" data-price="1130"  data-image="./照片/七星潭有海的照片2.jpg">
+                  <h4>預訂</h4>
+              </a>
+          </div>
+          <div class="room-item" data-location="花蓮市" data-id="2">
+              <a href="#" class="booking-link" data-name="撒固兒套房" data-price="1390" >
+                  <img src="./照片/sakul.jpg" alt="">
+              </a>
+              <p>9.5/10 <span>大拇指(693則評論)</span></p>
+              <h3>撒固兒套房</h3>
+              <p>花蓮市</p>
+              <h3 class="price" data-price="1390">NT$1.390</h3>
+              <a href="#" class="btn-filled-dark booking-link" data-name="撒固兒套房" data-price="1390" data-image="./照片/sakul.jpg">
+                  <h4>預訂</h4>
+              </a>
+          </div>
+          <div class="room-item" data-location="吉安鄉" data-id="3">
+              <a href="#" class="booking-link" data-name="娜荳蘭套房" data-price="1230">
+                  <img src="./照片/吉寶竿.jpg" alt="">
+              </a>
+              <p>9.9/10 <span>棒極了(1832則評論)</span></p>
+              <h3>娜荳蘭套房</h3>
+              <p>吉安鄉</p>
+              <h3 class="price" data-price="1230">NT$1.230</h3>
+              <a href="#" class="btn-filled-dark booking-link" data-name="娜荳蘭套房" data-price="1230" data-image="./照片/吉寶竿.jpg">
+                  <h4>預訂</h4>
+              </a>
+          </div>
+          <div class="room-item" data-location="花蓮市" data-id="4">
+              <a href="#" class="booking-link" data-name="磯固套房" data-price="1192">
+                  <img src="./照片/ciku.jpg" alt="">
+              </a>
+              <p>9.7/10 <span>最美的(379則評論)</span></p>
+              <h3>磯固套房</h3>
+              <p>花蓮市</p>
+              <h3 class="price" data-price="1192">NT$1.192</h3>
+              <a href="#" class="btn-filled-dark booking-link" data-name="磯固套房" data-price="1192" data-image="./照片/ciku.jpg">
+                  <h4>預訂</h4>
+              </a>
+          </div>
+          <div class="room-item" data-location="新城鄉" data-id="5">
+              <a href="#" class="booking-link" data-name="洄瀾套房" data-price="990">
+                  <img src="./照片/洄瀾回欄.jpg" alt="">
+              </a>
+              <p>9.1/10 <span>棒極了(102則評論)</span></p>
+              <h3>洄瀾套房</h3>
+              <p>新城鄉</p>
+              <h3 class="price" data-price="990">NT$990</h3>
+              <a href="#" class="btn-filled-dark booking-link" data-name="洄瀾套房" data-price="990" data-image="./照片/洄瀾回欄.jpg">
+                  <h4>預訂</h4>
+              </a>
+          </div>
+          <div class="room-item" data-location="吉安鄉" data-id="6">
+              <a href="#" class="booking-link" data-name="幕夏民宿" data-price="1290">
+                  <img src="./照片/目下.jpg" alt="">
+              </a>
+              <p>9.5/10 <span>美呆了(1209則評論)</span></p>
+              <h3>幕夏民宿</h3>
+              <p>吉安鄉</p>
+              <h3 class="price" data-price="1290">NT$1.290</h3>
+              <a href="#" class="btn-filled-dark booking-link" data-name="幕夏民宿" data-price="1290" data-image="./照片/目下.jpg">
+                  <h4>預訂</h4>
+              </a>
+          </div>
+          <div class="room-item" data-location="花蓮市" data-id="7">
+              <a href="#" class="booking-link" data-name="海軒民宿" data-price="1090">
+                  <img src="./照片/海景軒 花蓮市.jpg" alt="">
+              </a>
+              <p>9.4/10 <span>棒極了(2002則評論)</span></p>
+              <h3>海軒民宿</h3>
+              <p>花蓮市</p>
+              <h3 class="price" data-price="1090">NT$1.090</h3>
+              <a href="#" class="btn-filled-dark booking-link" data-name="海軒民宿" data-price="1090" data-image="./照片/海景軒 花蓮市.jpg">
+                  <h4>預訂</h4>
+              </a>
+          </div>
+          <div class="room-item" data-location="花蓮市" data-id="8">
+              <a href="#" class="booking-link" data-name="吉寶竿民宿" data-price="1190">
+                  <img src="./照片/寶竿套房.jpg" alt="">
+              </a>
+              <p>9.5/10 <span>大拇指(622則評論)</span></p>
+              <h3>吉寶竿民宿</h3>
+              <p>花蓮市</p>
+              <h3 class="price" data-price="1190">NT$1.190</h3>
+              <a href="#" class="btn-filled-dark booking-link" data-name="吉寶竿民宿" data-price="1190"  data-image="./照片/寶竿套房.jpg">
+                  <h4>預訂</h4>
+              </a>
+          </div>
+          <div class="room-item" data-location="新城鄉" data-id="9">
+              <a href="#" class="booking-link" data-name="圖雅民宿" data-price="3820">
+                  <img src="./照片/圖雅特海.jpg" alt="">
+              </a>
+              <p>9.9/10 <span>美的國度(2622則評論)</span></p>
+              <h3>圖雅民宿</h3>
+              <p>新城鄉</p>
+              <h3 class="price" data-price="3820">NT$3.820</h3>
+              <a href="#" class="btn-filled-dark booking-link" data-name="圖雅民宿" data-price="3820" data-image="./照片/圖雅特海.jpg">
+                  <h4>預訂</h4>
+              </a>
+          </div>
+          <div class="room-item" data-location="吉安鄉" data-id="10">
+              <a href="#" class="booking-link" data-name="奇文套房" data-price="2110">
+                  <img src="./照片/奇文套房.jpg" alt="">
+              </a>
+              <p>9.5/10 <span>大拇指(122則評論)</span></p>
+              <h3>奇文套房</h3>
+              <p>吉安鄉</p>
+              <h3 class="price" data-price="2110">NT$2.110</h3>
+              <a href="#" class="btn-filled-dark booking-link" data-name="奇文套房" data-price="2110" data-image="./照片/奇文套房.jpg">
+                  <h4>預訂</h4>
+              </a>
+          </div>
+          <div class="room-item" data-location="吉安鄉" data-id="11">
+              <a href="#" class="booking-link" data-name="曠野民宿" data-price="890">
+                  <img src="./照片/曠野民宿.jpg" alt="">
+              </a>
+              <p>9.3/10 <span>大拇指(59則評論)</span></p>
+              <h3>曠野民宿</h3>
+              <p>吉安鄉</p>
+              <h3 class="price" data-price="890">NT$890</h3>
+              <a href="#" class="btn-filled-dark booking-link" data-name="曠野民宿" data-price="890" data-image="./照片/奇文套房.jpg">
+                  <h4>預訂</h4>
+              </a>
+          </div>
+          <div class="room-item" data-location="新城鄉" data-id="12">
+              <a href="#" class="booking-link" data-name="Cika民宿" data-price="990"  data-image="./照片/曠野民宿.jpg">
+                  <img src="./照片/cika民宿.jpg" alt="">
+              </a>
+              <p>9.5/10 <span>棒極了(322則評論)</span></p>
+              <h3>Cika民宿</h3>
+              <p>新城鄉</p>
+              <h3 class="price" data-price="990">NT$990</h3>
+              <a href="#" class="btn-filled-dark booking-link" data-name="Cika民宿" data-price="990">
+                  <h4>預訂</h4>
+              </a>
+          </div>
+      </div>
+      
+        <button class="arrow arrow-left" onclick="scrollLeft()">&#8249;</button>
+        <button class="arrow arrow-right" onclick="scrollRight()">
+          &#8250;
+        </button>
+      </section>
+
+      <!-- 工作坊活動 -->
+
+      <section class="work">
+        <h2>探索更多活動</h2>
+        <p>延續文化的溫度</p>
+        <div class="room-container">
+          <div class="work-item">
+            <a href="./祭典.html"
+              ><img src="./照片/撒奇萊雅祭典.webp" alt=""
+            /></a>
+            <h3>祭典</h3>
+          </div>
+          <div class="work-item">
+            <a href="./飲食.html"><img src="./照片/阿里鳳鳳.jpg" alt="" /></a>
+            <h3>飲食</h3>
+          </div>
+          <div class="work-item">
+            <a href="#"><img src="./照片/黃聖安01.JPG" alt="" /></a>
+            <h3>藝術</h3>
+          </div>
+          <div class="work-item">
+            <a href="./工作坊.css"
+              ><img
+                src="./照片/399694620_664327975847548_4643314732394794198_n.jpg"
+                alt=""
+            /></a>
+            <h3>工作坊</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- 地點 -->
+      <div id="destination-popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" id="destination-close-btn">&times;</span>
+          <h3>選擇地點</h3>
+          <select id="destination-select">
+            <option value="">請選擇地點</option>
+            <option value="花蓮市">花蓮市</option>
+            <option value="吉安鄉">吉安鄉</option>
+            <option value="新城鄉">新城鄉</option>
+          </select>
+          <button id="destination-save-btn">完成</button>
+        </div>
+      </div>
+
+      <!-- 日期 -->
+      <div id="date-popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" id="date-close-btn">&times;</span>
+          <h3>訂房日期</h3>
+          <input type="date" id="start-date" />
+          <h3>退房日期</h3>
+          <input type="date" id="end-date" />
+          <button id="date-save-btn">完成</button>
+        </div>
+      </div>
+
+      <!-- 人數 -->
+      <div id="guests-popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" id="guests-close-btn">&times;</span>
+    
+          <label>旅客</label>
+          <input type="number" id="adults" min="1" value="2" />
+          <label>兒童</label>
+          <input type="number" id="children" min="0" value="1" />
+          <button id="add-room">加訂一間客房</button>
+          <button id="guests-save-btn">完成</button>
+        </div>
+      </div>
+
+
+
+    <!-- 訂房彈出視窗 -->
+    <div class="popup" id="booking-popup">
+      <div class="popup-content">
+        <img src="./照片/logo橫式.png" alt="">
+          <span class="close-btn" onclick="closePopup('booking-popup')">&times;</span>
+          <h3 id="booking-title">預訂房間</h3>
+          <label>入住日期</label>
+          <input type="date" id="booking-start-date"/>
+          <label>退房日期</label>
+          <input type="date" id="booking-end-date"/>
+          <label>成人</label>
+          <input type="number" id="booking-adults" min="1" value="1"/>
+          <label>兒童</label>
+          <input type="number" id="booking-children" min="0" value="0"/>
+          <button id="confirmBookingBtn">確認預訂</button>
+      </div>
+  </div>
+
+  <!-- 預訂成功彈出視窗 -->
+  <div class="popup" id="success-popup">
+      <div class="popup-content">
+        <img src="./照片/logo橫式.png" alt="">
+        <span class="close-btn"  onclick="hidePopup('success-popup')">&times;</span>
+          <h3>預訂成功</h3>
+          <button onclick="hidePopup('success-popup')">完成</button>
+        </div>
+    </div>
+
+</div>
+
+      <!-- footer -->
+      <div class="footer">
+        <a id="logo" href="./index.html"
+          ><img src="./照片/白色footer.png" alt=""
+        /></a>
+        <ul class="footer-icon">
+          <li>
+            <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./住宿.js"></script>
+    <script src="./cart.js"></script>
+
+  </body>
+</html>
+

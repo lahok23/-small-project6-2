@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+}
+
+.container {
+  width: 400vw;
+  display: flex;
+  position: relative;
+  padding: 0.5%;
+  margin-right: 100px;
+  text-align: center;
+  z-index: 10;
+}
+
+li {
+  list-style: none;
+  transition: all 0.4s;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+.logo {
+  background-image: url(./照片/無敵小了.png);
+  display: block;
+  background-repeat: no-repeat;
+  font-size: 0px;
+  padding: 50px;
+  margin-left: 50px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ul_second a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  padding: 15px;
+  letter-spacing: 5px;
+}
+
+a:hover {
+  color: black;
+  display: inline-block;
+  background-color: white;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  padding: 5px;
+  transition: 2s;
+}
+
+.content {
+  text-align: left;
+}
+
+.content h1 {
+  font-size: 90px;
+  color: #fff;
+  font-weight: bolder;
+  transition: 2s;
+  letter-spacing: 25px;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 28px;
+  letter-spacing: 18px;
+  padding: 5px;
+  display: block;
+  font-weight: bolder;
+  transition: 2s;
+}
+
+.content h4 {
+  color: #fff;
+  font-size: 24px;
+  padding-top: 15px;
+  transition: 2s;
+  text-align: center;
+}
+
+.path {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  background-color: white;
+}
+
+.content h1:hover,
+h2:hover,
+h4:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+p {
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.container {
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 0%;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -1;
+  opacity: 1;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow-y: hidden;
+}
+
+#logo {
+  border: 2px solid black;
+  padding: 0 15px;
+}
+
+.main-nav {
+  position: fixed;
+  display: flex;
+  padding: 2em 4em;
+}
+
+.main-nav .ul_second {
+  position: fixed;
+  display: flex;
+  right: 4em;
+}
+
+.main-nav .ul_second li {
+  margin-top: 30px;
+  margin-left: 1.5em;
+}
+
+.main-nav .ul_second #border {
+  border: 1px solid black;
+  padding: 0 15px;
+  align-items: center;
+}
+
+.container .summer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8em;
+}
+
+.page2 {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.page2 .content {
+  text-align: center;
+}
+.video2 {
+  position: absolute;
+}
+
+.page3 {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.page3 .content {
+  text-align: center;
+}
+.video3 {
+  position: absolute;
+}
+
+.page4 {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.page4 .content {
+  text-align: center;
+}
+.video4 {
+  position: absolute;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 0%;
+}
+
+.scroll-hint {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  color: white;
+  padding: 1px 20px;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: 2s;
+}

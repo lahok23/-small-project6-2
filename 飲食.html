@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KIZA飲食</title>
+    <link rel="stylesheet" href="./飲食.css" />
+    <link rel="shortcut icon" href="./照片/logo 超小.png" type="image/x-icon" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <!-- 選項 -->
+    <div class="wrap">
+      <div class="header">
+        <a id="logo" href="./second.html"
+          ><img src="./照片/橫式超超小.png" alt=""
+        /></a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="ph-bold ph-list"></i>
+        </div>
+        <ul class="navbar">
+          <li><a href="./祭典.html">祭典</a></li>
+          <li><a href="#">飲食</a></li>
+          <li><a href="./藝術.html">藝術</a></li>
+          <li><a href="./工作坊.html">工作坊</a></li>
+          <li><a href="./住宿.html">住宿</a></li>
+        </ul>
+        <ul class="icon">
+          <li>
+            <a href="./cart.html">
+              <i class="ph-bold ph-shopping-cart-simple"></i>
+              <span id="cartItemCount" style="color: black; font-size: 18px"
+                >0</span
+              >
+              <!-- 新增显示数量的元素 -->
+            </a>
+          </li>
+        </ul>
+      </div>
+      <br /><br /><br /><br />
+
+      <!-- banner -->
+      <div class="banner">
+        <img src="./照片/阿里鳳鳳超清晰.JPG" alt="" />
+        <div class="text-banner">
+          <h2>飲食</h2>
+          <h1>交織成細密而又豐富的食文化</h1>
+        </div>
+      </div>
+
+      <!-- 下方 -->
+      <section>
+        <h2>選擇飲食</h2>
+        <ul class="course">
+          <li class="card-item" id="serv-groom">
+            <div class="card-image">
+              <img
+                src="https://s.yimg.com/ny/api/res/1.2/Zn7B5BZCA8pde80L35Jjag--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTg1NA--/https://media.zenfs.com/ko/setn.com.tw/02c670134413acb5dc27a2329988d4eb"
+              />
+            </div>
+            <ul>
+              <h3>情人的眼淚</h3>
+              <p>
+                lalupela'
+                <span
+                  ><i
+                    class="ph-bold ph-speaker-high play-audio"
+                    data-audio="影片/lalupela.mov"
+                  ></i
+                ></span>
+              </p>
+              <span class="subtitle"
+                >雨來菇，是古時雨後在山坡、草皮上就能採到的野菜，阿美族傳說中曾有一對私奔戀人最後因無力逃跑，在草原上相擁而亡，而兩人滴下的眼淚就化為一朵朵的雨來菇，因此雨來菇又稱「情人的眼淚」。</span
+              >
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="70">一包/$70</span>
+              </li>
+
+              <button
+                class="btn-filled-dark addToCartBtn"
+                data-id="1"
+                data-image="https://s.yimg.com/ny/api/res/1.2/Zn7B5BZCA8pde80L35Jjag--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTg1NA--/https://media.zenfs.com/ko/setn.com.tw/02c670134413acb5dc27a2329988d4eb"
+                data-name="情人的眼淚"
+                data-price="70"
+              >
+                購買
+              </button>
+            </ul>
+          </li>
+          <li class="card-item" id="serv-board">
+            <div class="card-image">
+              <img
+                src="https://dcm.s3.hicloud.net.tw/new/collection/2020-10-16/94dbd3ea-e8f7-4d83-a538-71d4c91348f9/e64e5370-0282-4b96-984b-12aeeec2d35a.jpg"
+              />
+            </div>
+            <ul>
+              <h3>鹹豬肉</h3>
+              <p>
+                siraw
+                <span
+                  ><i
+                    class="ph-bold ph-speaker-high play-audio"
+                    data-audio="影片/siraw.mov"
+                  ></i
+                ></span>
+              </p>
+
+              <span class="subtitle"
+                >喜烙是原住民非常具有代表性的傳統食材，幾乎是族人們從小吃到大，喜烙就是醃生豬肉，用粗鹽醃製，經過發酵後的豬肉風味獨特，酸酸鹹鹹的滋味，讓許多初次嘗試的朋友，都留下深刻的印象。</span
+              >
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="300">一罐/$300</span>
+              </li>
+
+              <button
+                class="btn-filled-dark addToCartBtn"
+                data-id="2"
+                data-image="https://dcm.s3.hicloud.net.tw/new/collection/2020-10-16/94dbd3ea-e8f7-4d83-a538-71d4c91348f9/e64e5370-0282-4b96-984b-12aeeec2d35a.jpg"
+                data-name="鹹豬肉"
+                data-price="300"
+              >
+                購買
+              </button>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- 2 -->
+        <ul class="course">
+          <li class="card-item" id="serv-groom">
+            <div class="card-image">
+              <img src="./照片/藤心.jpg" />
+            </div>
+            <ul>
+              <h3>藤心</h3>
+              <p>
+                dungec
+                <span
+                  ><i
+                    class="ph-bold ph-speaker-high play-audio"
+                    data-audio="影片/dungec.mov"
+                  ></i
+                ></span>
+              </p>
+
+              <span class="subtitle"
+                >阿美族人招待貴賓時，藤心是不可缺少的食物，部落耆老則喜歡將其煮湯，喝它的甘苦原味。阿美族部落流傳「吃藤心，壽命如藤條一般長」，顥示族人相信藤心對健康相當有助益。</span
+              >
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="120">一包/$120</span>
+              </li>
+              <button
+                class="btn-filled-dark addToCartBtn"
+                data-id="3"
+                data-image="./照片/藤心.jpg"
+                data-name="藤心"
+                data-price="120"
+              >
+                購買
+              </button>
+            </ul>
+          </li>
+          <li class="card-item" id="serv-board">
+            <div class="card-image">
+              <img src="./照片/劍筍.jpg" />
+            </div>
+            <ul>
+              <h3>劍筍</h3>
+              <br />
+              <p>
+                adeci
+                <span
+                  ><i
+                    class="ph-bold ph-speaker-high play-audio"
+                    data-audio="影片/箭筍.mov"
+                  ></i
+                ></span>
+              </p>
+              <span class="subtitle"
+                >劍筍是台灣特有種，阿美族人傳統的吃法是和鹹豬肉或排骨一起熬湯，或是和鹹豬肉、辣椒一起炒，在以前會在還未剝外皮時將它拿去烤再淋上烤鹹豬肉的油也別有一番風味。</span
+              >
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="100">一包/$100</span>
+              </li>
+              <button
+                class="btn-filled-dark addToCartBtn"
+                data-id="4"
+                data-image="./照片/劍筍.jpg"
+                data-name="劍筍"
+                data-price="100"
+              >
+                購買
+              </button>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- 3 -->
+        <ul class="course">
+          <li class="card-item" id="serv-groom">
+            <div class="card-image">
+              <img src="./照片/阿里鳳鳳打開.jpg" />
+            </div>
+            <ul>
+              <span class="play-audio" data-audio="影片/族語念.mp3"
+                ><h3>阿里鳳鳳</h3></span
+              >
+              <p>
+                alibungbung
+                <span
+                  ><i
+                    class="ph-bold ph-speaker-high play-audio"
+                    data-audio="影片/alifunfung.mov"
+                  ></i
+                ></span>
+              </p>
+              <span class="subtitle">
+                在阿美族的傳統社會中，妻子會準備給外出耕種的丈夫，因此也被稱為「情人粽」，做法是先將採集的葉子去除葉骨跟刺，編織成袋狀，再將糯米、鹹豬肉等內餡放入，經過蒸煮後就成為特別的愛心便當。
+              </span>
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="60">一份/$60</span>
+              </li>
+              <button
+                class="btn-filled-dark addToCartBtn"
+                data-id="5"
+                data-image="./照片/阿里鳳鳳打開.jpg"
+                data-name="阿里鳳鳳"
+                data-price="60"
+              >
+                購買
+              </button>
+            </ul>
+          </li>
+          <li class="card-item" id="serv-board">
+            <div class="card-image">
+              <img src="./照片/hakhak.jpg" />
+            </div>
+            <ul>
+              <h3>糯米飯</h3>
+              <p>
+                hakhak
+                <span
+                  ><i
+                    class="ph-bold ph-speaker-high play-audio"
+                    data-audio="影片/hakhak.mov"
+                  ></i
+                ></span>
+              </p>
+
+              <span class="subtitle">
+                「HakHak」 是阿美族的傳統料理 用糯米蒸煮後 佐配菜食用
+                一般部落配鹹魚乾、醃豬肉等 在慶典、婚喪喜慶才會吃得到<br /><br /><br />
+              </span>
+
+              <li>
+                <a href="#">金額</a
+                ><span class="price" data-price="30">一份/$30</span>
+              </li>
+
+              <button
+                class="btn-filled-dark addToCartBtn"
+                data-id="6"
+                data-image="./照片/hakhak.jpg"
+                data-name="糯米飯"
+                data-price="30"
+              >
+                購買
+              </button>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- footer -->
+      <div class="footer">
+        <a id="logo" href="./index.html"
+          ><img src="./照片/白色footer.png" alt=""
+        /></a>
+        <ul class="footer-icon">
+          <li>
+            <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- -- -->
+      <div id="quantityModal" class="modal">
+        <div class="modal-content">
+          <img src="./照片/橫式超超小.png" alt="" />
+          <span class="close">&times;</span>
+
+          <p>請輸入購買數量:</p>
+          <input type="number" id="quantityInput" min="1" max="50" value="1" />
+          <p id="totalAmount"></p>
+          <button id="confirmQuantity" class="btn-filled-dark">確定</button>
+          <p id="purchaseSuccess" style="display: none; color: green">
+            購買成功！
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./飲食.js"></script>
+  </body>
+</html>

@@ -1,0 +1,604 @@
+/* Reset CSS and styles */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: url(./照片/背景背景.png);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.header {
+  z-index: 100;
+  display: flex;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  box-shadow: 1px 3px 5px gray;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 1440px;
+  max-width: 100%;
+  padding: 0px 20px;
+}
+
+#logo img {
+  opacity: 0.9;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar li {
+  padding-left: 30px;
+  padding-right: 40px;
+  margin-right: 50px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+}
+
+.navbar li:nth-of-type(3) a {
+  color: crimson;
+  padding-bottom: 16px;
+  border-bottom: 4px solid crimson;
+}
+
+.icon a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+}
+
+#workshop a {
+  color: crimson;
+  border-bottom: 4px solid crimson;
+  padding-bottom: 16px;
+}
+
+.icon a:hover {
+  color: crimson;
+  border-bottom: 4px solid crimson;
+  padding-bottom: 15px;
+  transition: 1s;
+}
+
+.navbar li a:hover {
+  color: crimson;
+  border-bottom: 4px solid crimson;
+  padding-bottom: 16px;
+  transition: 1s;
+}
+
+/* 漢堡 */
+.navbar.hidden {
+  display: none;
+}
+
+/* 漢堡選單 */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+@media (max-width: 1042px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #fdfbfb;
+    box-shadow: 1px 3px 5px gray;
+  }
+  .navbar li {
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+  }
+  .navbar li a {
+    font-size: 20px;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .icon {
+    display: none;
+  }
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 68vh;
+  opacity: 90%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.text-banner {
+  position: absolute;
+  color: white;
+  top: 45%;
+  left: 5%;
+  line-height: 50px;
+  width: 100%;
+}
+
+.text-banner h2 {
+  font-size: 2rem;
+}
+
+.text-banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.coursetext {
+  display: flex;
+}
+
+.coursetext p {
+  font-size: 10px;
+  padding-left: 55px;
+  padding-top: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  flex-wrap: nowrap;
+}
+
+.course {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-item {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-item:hover {
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+  transform: scale(1.01);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.card-image > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: initial;
+}
+
+.card-item a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card-item > ul {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 8px;
+  flex: 1;
+  color: #45413e;
+  padding: 0 40px 40px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.card-item > ul > li a {
+  line-height: 32px;
+  font-size: 14px;
+}
+
+.card-item a {
+  color: #45413e;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 12px 24px;
+  border-radius: 48px;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 8px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button.btn-outline-light {
+  color: #f9f9f9;
+  background: none;
+  border: 2px solid #f9f9f9;
+}
+
+button.btn-outline-dark {
+  color: #45413e;
+  background: none;
+  border: 2px solid #45413e;
+}
+
+button.btn-filled-dark {
+  color: #f9f9f9;
+  background: #45413e;
+}
+
+button:hover {
+  color: #f9f9f9;
+  border: 2px solid #f4cfc6;
+  background: #d51f1f;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-med > .card-image {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  padding: 50px;
+}
+
+section h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: #45413e;
+  margin-bottom: 32px;
+}
+
+.card-item {
+  flex-direction: row;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.card-item .card-image {
+  width: 50%;
+  border-radius: 0;
+}
+
+.card-item > ul {
+  padding: 40px;
+}
+
+.card-item > ul > li span {
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.card-item .subtitle {
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.card-item button {
+  margin-top: auto;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+  background-color: rgb(88, 88, 88);
+}
+
+.footer .footer-icon {
+  font-size: 32px;
+  display: flex;
+}
+
+.footer-icon li {
+  padding: 20px;
+}
+
+.footer-icon li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-icon a:hover {
+  font-size: 40px;
+  transition: 1s;
+}
+.subtitle {
+  font-size: 14px;
+  color: #555;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* 圖片文字rwd */
+@media (max-width: 768px) {
+  .text-banner {
+    h2 {
+      font-size: 1.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+/* cardrwd */
+@media (max-width: 1042px) {
+  .course {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-image {
+    height: auto;
+  }
+  .banner img {
+    height: auto;
+  }
+}
+
+.modal {
+  display: none; /* 默認情況下隱藏彈跳視窗 */
+  position: fixed;
+  z-index: 9999; /* 確保視窗在最上層 */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* 允許用戶滾動視窗內容 */
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+}
+
+.modal-content {
+  background-color: #f9f9f9; /* 內容區域背景色 */
+  margin: 15% auto; /* 將視窗垂直居中 */
+  line-height: 30px;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加陰影效果 */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: crimson; /* 滑鼠懸停時的背景色 */
+}
+
+#purchaseSuccess {
+  color: crimson; /* 設置文字顏色為綠色 */
+  text-align: center; /* 文字置中 */
+  margin-top: 10px; /* 上邊距10像素 */
+}
+
+.clicked {
+  color: red;
+}

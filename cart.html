@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購物車</title>
+    <link rel="stylesheet" href="./cart.css" />
+    <link rel="shortcut icon" href="./照片/logo 超小.png" type="image/x-icon" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <a id="logo" href="./index.html">
+          <img src="./照片/橫式超超小.png" alt="" />
+        </a>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="ph-bold ph-list"></i>
+        </div>
+        <ul class="navbar">
+          <li><a href="./祭典.html">祭典</a></li>
+          <li><a href="./飲食.html">飲食</a></li>
+          <li><a href="./藝術.html">藝術</a></li>
+          <li><a href="./工作坊.html">工作坊</a></li>
+          <li><a href="./住宿.html">住宿</a></li>
+        </ul>
+        <ul class="icon">
+          <li>
+            <a href="./cart.html">
+              <i class="ph-bold ph-shopping-cart-simple"></i>
+              <span id="cartItemCount">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="wrap cf">
+        <div class="heading cf">
+          <h1>我的購物車</h1>
+          <a href="#" class="continue">繼續購物</a>
+        </div>
+        <div class="cart">
+          <ul class="cartWrap" id="cartItems">
+            <!-- 購物車商品將顯示在這裡 -->
+          </ul>
+        </div>
+
+        <div class="subtotal cf">
+          <ul>
+            <li class="totalRow">
+              <span class="label">小計</span
+              ><span class="value" id="subtotal">$0.00</span>
+            </li>
+            <li class="totalRow">
+              <span class="label">運費</span><span class="value">$5.00</span>
+            </li>
+            <li class="totalRow">
+              <span class="label">稅金</span><span class="value">$4.00</span>
+            </li>
+            <li class="totalRow final">
+              <span class="label">總計</span
+              ><span class="value" id="total">$9.00</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 添加结帐表单 -->
+        <div class="checkout-form">
+          <h2>結帳資訊</h2>
+          <form id="checkoutForm">
+            <label for="name">姓名:</label>
+            <input
+              type="text"
+              id="name"
+              value="拉厚克·古莫得"
+              name="name"
+              required
+            />
+
+            <label for="phone">電話:</label>
+            <input
+              type="text"
+              id="phone"
+              value="0985322122"
+              name="phone"
+              required
+            />
+
+            <label for="address">住址:</label>
+            <input
+              type="text"
+              id="address"
+              value="花蓮縣富里鄉袋米路2號"
+              name="address"
+              required
+            />
+
+            <label for="creditCard">信用卡號:</label>
+            <input
+              type="text"
+              id="creditCard"
+              value="4283-0976-2103-4332"
+              name="creditCard"
+              required
+            />
+
+            <button type="submit" class="btn continue">結帳</button>
+            <div class="promoCode">
+              <label for="promo">有促銷代碼嗎？</label>
+              <input type="text" name="promo" placeholder="輸入網頁上族語" />
+              <a href="#" class="btn">應用</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="footer">
+        <a id="logo" href="./index.html"
+          ><img src="./照片/白色footer.png" alt=""
+        /></a>
+        <ul class="footer-icon">
+          <li>
+            <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="cart.js"></script>
+  </body>
+</html>
