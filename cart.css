@@ -359,8 +359,7 @@ img {
 /* 這是中間購物車內容物的字 */
 .cart .items .cartSection h3 {
   text-transform: uppercase;
-  letter-spacing: 0.25em;
-  margin: 0 30px;
+  letter-spacing: 0em;
   font-size: 2rem;
 }
 
@@ -380,14 +379,13 @@ img {
   font-size: 1.3em;
   margin-left: 1rem;
   padding-left: 8px;
-  margin-right: 10rem;
+  margin-right: 5rem;
 }
 
 /* 這是顯示有無庫存 */
 .cart .items .cartSection .stockStatus {
   color: #878787;
   font-weight: bold;
-  margin-left: 80px;
   text-transform: uppercase;
 }
 
@@ -403,7 +401,7 @@ img {
   font-weight: bold;
   font-size: 1.5em;
   color: rgb(165, 40, 40);
-  padding-left: 8rem;
+  padding-left: 18rem;
 }
 
 .cart .items .removeWrap a.remove {
