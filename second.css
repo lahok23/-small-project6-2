@@ -495,7 +495,7 @@ img {
   }
   .item {
     width: 50%;
-    border: 2px solid black;
-    margin: 2px 2px;
+    border: 1px solid gray;
+    margin: 10px 2px;
   }
 }

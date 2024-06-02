@@ -1,4 +1,34 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // 切换菜单的显示和隐藏
+  function toggleMenu() {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("hidden");
+  }
+
+  // 监听窗口大小变化事件，控制菜单的显示和隐藏
+  window.addEventListener("resize", () => {
+    const navbar = document.querySelector(".navbar");
+    if (window.innerWidth <= 1042) {
+      navbar.classList.add("hidden");
+    } else {
+      navbar.classList.remove("hidden");
+    }
+  });
+
+  // 初始加载时根据窗口宽度设置菜单显示或隐藏
+  const navbar = document.querySelector(".navbar");
+  if (window.innerWidth <= 1042) {
+    navbar.classList.add("hidden");
+  } else {
+    navbar.classList.remove("hidden");
+  }
+
+  // 将 toggleMenu 函数绑定到汉堡菜单按钮的点击事件
+  const hamburger = document.querySelector(".hamburger");
+  hamburger.addEventListener("click", toggleMenu);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   // 選擇所有購買按鈕
   const purchaseButtons = document.querySelectorAll(".btn-filled-dark");
 
